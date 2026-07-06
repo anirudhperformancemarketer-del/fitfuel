@@ -1,0 +1,1876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitFuel — Premium Whey Protein, Creatine & Pre-Workout | India</title>
+<meta name="description" content="FitFuel: lab-tested premium supplements engineered in India. Whey Protein, Creatine Monohydrate, Pre-Workout. Free shipping over ₹999. COD available.">
+
+<!-- ============ Google Tag Manager ============ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MB44KDBH');</script>
+<!-- ============ End Google Tag Manager ============ -->
+
+<!-- ============ Meta Pixel (replace YOUR_PIXEL_ID) ============ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID'); // TODO: replace with FitFuel's Meta Pixel ID
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- ============ End Meta Pixel ============ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================================
+   FITFUEL v2 — "Obsidian Lab" design system
+   Premium dark storefront. Each product owns a signature accent that
+   flows through its render, its page, and its cart line.
+   ===================================================================== */
+:root{
+  --bg:#0B0C10;
+  --bg2:#101218;
+  --surface:#161922;
+  --surface2:#1D212C;
+  --line:#262B38;
+  --line2:#333A4A;
+  --text:#F4F2EC;
+  --muted:#9BA2B0;
+  --dim:#6B7280;
+
+  --gold:#F2B138;
+  --gold2:#FFD98A;
+
+  --whey:#E89B3C;   /* caramel amber   */
+  --creatine:#4FC3F7; /* glacier blue  */
+  --prewo:#FF5470;  /* volt crimson    */
+
+  --display:'Space Grotesk',sans-serif;
+  --body:'Inter',-apple-system,sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+
+  --r:16px;
+  --r-sm:10px;
+  --pad:clamp(20px,4vw,56px);
+  --max:1240px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+body{
+  font-family:var(--body);background:var(--bg);color:var(--text);
+  line-height:1.6;-webkit-font-smoothing:antialiased;min-height:100vh;
+}
+button{font-family:inherit;cursor:pointer;color:inherit}
+input,select{font-family:inherit;font-size:15px}
+a{color:inherit}
+svg{display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+h1,h2,h3,h4{font-family:var(--display);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+
+.eyebrow{
+  font-family:var(--mono);font-size:11.5px;font-weight:600;color:var(--gold);
+  text-transform:uppercase;letter-spacing:.22em;
+  display:inline-flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:"◆";font-size:8px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-weight:600;font-size:15px;padding:15px 28px;border-radius:999px;
+  border:1px solid transparent;text-decoration:none;
+  transition:transform .15s,box-shadow .2s,background .2s,border-color .2s;
+  white-space:nowrap;
+}
+.btn:active{transform:scale(.97)}
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,#D98F1D);
+  color:#1A1405;box-shadow:0 8px 28px -8px rgba(242,177,56,.55);
+}
+.btn-gold:hover{box-shadow:0 12px 36px -6px rgba(242,177,56,.7);transform:translateY(-2px)}
+.btn-line{border-color:var(--line2);background:rgba(255,255,255,.02)}
+.btn-line:hover{border-color:var(--gold);background:rgba(242,177,56,.06)}
+.btn-dark{background:var(--surface2);border-color:var(--line)}
+.btn-dark:hover{border-color:var(--line2)}
+.btn-block{width:100%}
+.btn:disabled{opacity:.4;cursor:not-allowed;box-shadow:none;transform:none}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:90;
+  background:rgba(11,12,16,.82);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo{
+  font-family:var(--display);font-weight:700;font-size:24px;letter-spacing:-.02em;
+  text-decoration:none;display:flex;align-items:center;gap:9px;
+}
+.logo .mark{
+  width:32px;height:32px;border-radius:9px;
+  background:linear-gradient(135deg,var(--gold2),#D98F1D);
+  display:grid;place-items:center;color:#1A1405;font-size:17px;font-weight:800;
+}
+.logo em{font-style:normal;color:var(--gold)}
+.nav-links{display:flex;gap:26px;list-style:none}
+.nav-links a{
+  text-decoration:none;font-size:14px;font-weight:500;color:var(--muted);
+  transition:color .15s;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--text)}
+.nav-tools{display:flex;align-items:center;gap:8px}
+.icon-btn{
+  width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
+  background:var(--surface);display:grid;place-items:center;position:relative;
+  transition:border-color .15s,background .15s;
+}
+.icon-btn:hover{border-color:var(--gold)}
+.icon-btn svg{width:19px;height:19px;stroke:var(--text);fill:none;stroke-width:1.8}
+.cart-count{
+  position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;
+  border-radius:999px;background:var(--gold);color:#1A1405;
+  font-family:var(--mono);font-size:11px;font-weight:600;
+  display:grid;place-items:center;
+}
+.cart-count.hidden{display:none}
+@media(max-width:860px){.nav-links{display:none}}
+
+/* ---------- announcement ---------- */
+.announce{
+  background:linear-gradient(90deg,#1A1405,#2A1F08 40%,#1A1405);
+  border-bottom:1px solid rgba(242,177,56,.25);
+  text-align:center;padding:9px 16px;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gold2);
+}
+
+/* ---------- page routing ---------- */
+.page{display:none;animation:pageIn .35s ease}
+.page.active{display:block}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ---------- breadcrumbs ---------- */
+.crumbs{
+  font-family:var(--mono);font-size:12px;color:var(--dim);
+  padding:22px 0 0;display:flex;gap:8px;flex-wrap:wrap;
+}
+.crumbs a{text-decoration:none;color:var(--muted)}
+.crumbs a:hover{color:var(--gold)}
+.crumbs span{color:var(--text)}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;
+  border-bottom:1px solid var(--line);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(58% 70% at 76% 42%,rgba(242,177,56,.16),transparent 62%),
+    radial-gradient(40% 52% at 18% 82%,rgba(79,195,247,.07),transparent 60%);
+  pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),
+                   linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;
+  mask-image:radial-gradient(70% 70% at 60% 40%,rgba(0,0,0,.5),transparent 75%);
+}
+.hero-grid{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);
+  align-items:center;
+  padding-top:clamp(48px,7vw,96px);padding-bottom:clamp(48px,7vw,96px);
+  min-height:calc(100vh - 110px);
+}
+.hero h1{
+  font-size:clamp(44px,6.2vw,86px);margin:20px 0 22px;
+}
+.hero h1 .grad{
+  background:linear-gradient(100deg,var(--gold2) 10%,var(--gold) 45%,#FF7A3D 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lede{font-size:clamp(16px,1.5vw,18.5px);color:var(--muted);max-width:50ch;margin-bottom:34px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:44px}
+.hero-proof{display:flex;gap:clamp(20px,3vw,44px);flex-wrap:wrap}
+.proof{border-left:2px solid var(--line2);padding-left:16px}
+.proof b{font-family:var(--display);font-size:clamp(22px,2.2vw,30px);display:block;letter-spacing:-.02em}
+.proof b i{font-style:normal;color:var(--gold);font-size:.7em}
+.proof span{font-size:12.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+
+.hero-stage{position:relative;display:grid;place-items:center;min-height:420px}
+.hero-stage .halo{
+  position:absolute;width:min(480px,90%);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(242,177,56,.22),rgba(242,177,56,.05) 45%,transparent 70%);
+  filter:blur(4px);
+}
+.hero-stage .ring{
+  position:absolute;width:min(430px,82%);aspect-ratio:1;border-radius:50%;
+  border:1px dashed rgba(242,177,56,.35);
+  animation:spin 40s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-tub{width:min(300px,62%);filter:drop-shadow(0 40px 60px rgba(0,0,0,.6));animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.hero-chip{
+  position:absolute;background:rgba(22,25,34,.85);backdrop-filter:blur(8px);
+  border:1px solid var(--line2);border-radius:14px;padding:11px 16px;
+  font-family:var(--mono);font-size:12px;line-height:1.4;
+  box-shadow:0 16px 40px -12px rgba(0,0,0,.7);
+}
+.hero-chip b{color:var(--gold);font-size:16px;display:block}
+.chip-1{top:12%;left:2%}
+.chip-2{bottom:20%;right:0}
+.chip-3{bottom:4%;left:12%}
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-stage{min-height:380px;order:-1}
+  .hero-chip{display:none}
+}
+
+/* ---------- ticker ---------- */
+.ticker{
+  background:var(--gold);color:#1A1405;overflow:hidden;white-space:nowrap;
+  padding:11px 0;border-bottom:1px solid var(--line);
+}
+.ticker-track{display:inline-block;animation:scrollX 28s linear infinite}
+.ticker span{font-family:var(--mono);font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;margin:0 28px}
+@keyframes scrollX{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ sections ============ */
+section{padding:clamp(60px,8vw,110px) 0}
+.section-head{margin-bottom:clamp(34px,4vw,58px);display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.section-head h2{font-size:clamp(32px,4.4vw,56px);margin-top:14px}
+.section-head p{color:var(--muted);max-width:56ch;margin-top:12px}
+
+/* ============ product cards ============ */
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2.2vw,28px)}
+@media(max-width:960px){.product-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}}
+.pcard{
+  background:linear-gradient(180deg,var(--surface),var(--bg2));
+  border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+  display:flex;flex-direction:column;position:relative;
+  transition:transform .2s,border-color .2s,box-shadow .25s;
+}
+.pcard:hover{transform:translateY(-6px);border-color:var(--line2);box-shadow:0 30px 60px -24px rgba(0,0,0,.8)}
+.pcard-visual{
+  position:relative;padding:34px 20px 24px;display:grid;place-items:center;min-height:280px;
+  background:radial-gradient(70% 62% at 50% 38%,var(--pc-glow,rgba(242,177,56,.14)),transparent 70%);
+}
+.pcard-visual svg{width:min(180px,58%);filter:drop-shadow(0 24px 32px rgba(0,0,0,.55));transition:transform .25s}
+.pcard:hover .pcard-visual svg{transform:scale(1.05) translateY(-4px)}
+.pcard-badge{
+  position:absolute;top:16px;left:16px;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  background:rgba(11,12,16,.7);border:1px solid var(--line2);border-radius:999px;
+  padding:6px 12px;color:var(--pc,var(--gold));backdrop-filter:blur(6px);
+}
+.pcard-body{padding:22px 24px 26px;display:flex;flex-direction:column;flex:1;border-top:1px solid var(--line)}
+.pcard-cat{font-family:var(--mono);font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.16em}
+.pcard-body h3{font-size:22px;margin:8px 0 4px}
+.pcard-flav{font-size:13.5px;color:var(--muted);margin-bottom:14px}
+.rating{font-size:13px;color:var(--gold);letter-spacing:2px}
+.rating small{color:var(--dim);font-family:var(--mono);letter-spacing:0;margin-left:6px}
+.pcard-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:18px;gap:12px}
+.price{font-family:var(--display);font-weight:700;font-size:24px}
+.price .mrp{font-family:var(--mono);font-weight:400;font-size:13px;color:var(--dim);text-decoration:line-through;margin-left:8px}
+.mini-btn{
+  border-radius:999px;border:1px solid var(--line2);background:var(--surface2);
+  padding:11px 20px;font-weight:600;font-size:13.5px;transition:background .2s,border-color .2s;
+}
+.mini-btn:hover{border-color:var(--pc,var(--gold));color:var(--pc,var(--gold))}
+
+/* ============ PDP ============ */
+.pdp{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4.5vw,72px);padding:clamp(28px,4vw,56px) 0 clamp(60px,7vw,100px)}
+@media(max-width:920px){.pdp{grid-template-columns:1fr}}
+.pdp-stage{
+  position:sticky;top:100px;align-self:start;
+  border-radius:calc(var(--r) + 6px);border:1px solid var(--line);
+  background:
+    radial-gradient(70% 60% at 50% 36%,var(--pc-glow,rgba(242,177,56,.16)),transparent 72%),
+    linear-gradient(180deg,var(--surface),var(--bg2));
+  min-height:520px;display:grid;place-items:center;padding:44px 24px;overflow:hidden;
+}
+.pdp-stage::after{
+  content:"";position:absolute;inset:0;opacity:.4;pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;
+  mask-image:radial-gradient(72% 72% at 50% 42%,rgba(0,0,0,.55),transparent 78%);
+}
+.pdp-stage svg{width:min(300px,68%);position:relative;z-index:1;filter:drop-shadow(0 44px 60px rgba(0,0,0,.65))}
+@media(max-width:920px){.pdp-stage{position:static;min-height:400px}}
+.pdp-info .cat{font-family:var(--mono);font-size:12px;color:var(--pc,var(--gold));letter-spacing:.2em;text-transform:uppercase}
+.pdp-info h1{font-size:clamp(32px,3.6vw,46px);margin:12px 0 10px}
+.pdp-info .desc{color:var(--muted);margin:16px 0 26px;max-width:56ch}
+.pdp-price{font-family:var(--display);font-size:32px;font-weight:700;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pdp-price .mrp{font-family:var(--mono);font-size:15px;color:var(--dim);text-decoration:line-through;font-weight:400}
+.pdp-price .save{font-family:var(--mono);font-size:12px;color:#8FE388;background:rgba(90,200,120,.1);border:1px solid rgba(90,200,120,.3);padding:4px 10px;border-radius:999px;font-weight:500}
+.pdp-tax{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-top:4px}
+
+.opt-group{margin-top:26px}
+.opt-label{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:12px;display:flex;justify-content:space-between}
+.opt-label b{color:var(--text)}
+.opt-row{display:flex;gap:10px;flex-wrap:wrap}
+.opt{
+  border:1px solid var(--line2);background:var(--surface);border-radius:12px;
+  padding:12px 18px;font-size:14px;font-weight:500;transition:all .15s;
+}
+.opt:hover{border-color:var(--pc,var(--gold))}
+.opt.sel{border-color:var(--pc,var(--gold));background:var(--pc-glow,rgba(242,177,56,.12));color:var(--text);box-shadow:0 0 0 1px var(--pc,var(--gold))}
+.opt small{display:block;font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:2px}
+
+.qty-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.qty{
+  display:inline-flex;align-items:center;border:1px solid var(--line2);border-radius:999px;overflow:hidden;background:var(--surface);
+}
+.qty button{width:46px;height:52px;background:none;border:none;font-size:20px;color:var(--muted);transition:color .15s}
+.qty button:hover{color:var(--gold)}
+.qty span{min-width:44px;text-align:center;font-family:var(--mono);font-size:16px;font-weight:600}
+.qty-row .btn{flex:1;min-width:220px;font-size:16px}
+
+.pdp-meta{margin-top:30px;border-top:1px solid var(--line)}
+.pdp-meta .row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px;align-items:center}
+.pdp-meta .row svg{width:18px;height:18px;stroke:var(--gold);fill:none;stroke-width:1.8;flex-shrink:0}
+.pdp-facts{margin-top:34px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.pdp-facts h4{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.fact-line{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.fact-line:last-child{border:none}
+.fact-line b{font-family:var(--mono)}
+
+/* ============ benefits ============ */
+#p-home .benefits{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bene-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px)}
+@media(max-width:960px){.bene-grid{grid-template-columns:1fr}}
+.bene{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px 26px;transition:border-color .2s,transform .2s;
+}
+.bene:hover{border-color:var(--line2);transform:translateY(-4px)}
+.bene .b-ic{
+  width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px;
+  background:linear-gradient(135deg,rgba(242,177,56,.22),rgba(242,177,56,.05));
+  border:1px solid rgba(242,177,56,.3);
+}
+.bene .b-ic svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.7}
+.bene h3{font-size:18.5px;margin-bottom:8px}
+.bene p{font-size:14.5px;color:var(--muted)}
+
+/* ============ testimonials ============ */
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,26px)}
+@media(max-width:960px){.tst-grid{grid-template-columns:1fr;max-width:540px;margin:0 auto}}
+.tst{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px;display:flex;flex-direction:column;gap:16px;
+}
+.tst p{font-size:15px;color:#D5D2C9;flex:1}
+.tst-foot{display:flex;align-items:center;gap:13px;border-top:1px solid var(--line);padding-top:16px}
+.avatar{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:16px;color:#14100A;
+}
+.tst-foot b{font-size:14px;display:block}
+.tst-foot span{font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+
+/* ============ lead form ============ */
+.lead-box{
+  border-radius:calc(var(--r) + 8px);overflow:hidden;position:relative;
+  background:linear-gradient(120deg,#231803,#0B0C10 60%);
+  border:1px solid rgba(242,177,56,.3);
+  padding:clamp(36px,5vw,64px);
+  display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,4vw,56px);align-items:center;
+}
+@media(max-width:880px){.lead-box{grid-template-columns:1fr}}
+.lead-box h2{font-size:clamp(28px,3.6vw,44px)}
+.lead-box p{color:var(--muted);margin-top:12px;max-width:48ch}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.field input,.field select{
+  width:100%;padding:14px 16px;border-radius:12px;border:1px solid var(--line2);
+  background:var(--bg2);color:var(--text);outline:none;transition:border-color .15s;
+}
+.field input:focus,.field select:focus{border-color:var(--gold)}
+.field input::placeholder{color:var(--dim)}
+.field .err{color:#FF7A7A;font-size:12px;margin-top:5px;display:none}
+.field.invalid input{border-color:#FF7A7A}
+.field.invalid .err{display:block}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:820px}
+.faq{border:1px solid var(--line);border-radius:var(--r-sm);margin-bottom:12px;background:var(--surface);overflow:hidden}
+.faq-q{
+  width:100%;background:none;border:none;text-align:left;
+  display:flex;justify-content:space-between;align-items:center;gap:18px;
+  padding:20px 22px;font-size:16px;font-weight:600;font-family:var(--display);
+}
+.faq-q .ic{font-family:var(--mono);color:var(--gold);font-size:20px;transition:transform .2s;flex-shrink:0}
+.faq.open .ic{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+.faq-a p{padding:0 22px 20px;color:var(--muted);font-size:14.5px}
+
+/* ============ CART page ============ */
+.cart-layout{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,3.5vw,48px);padding:clamp(28px,4vw,52px) 0 clamp(60px,7vw,96px);align-items:start}
+@media(max-width:920px){.cart-layout{grid-template-columns:1fr}}
+.cart-line{
+  display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:center;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:16px;margin-bottom:14px;
+}
+.cart-line .thumb{
+  width:96px;height:96px;border-radius:12px;display:grid;place-items:center;
+  background:radial-gradient(70% 70% at 50% 40%,var(--pc-glow,rgba(242,177,56,.15)),transparent 75%),var(--bg2);
+  border:1px solid var(--line);
+}
+.cart-line .thumb svg{width:58px}
+.cart-line h4{font-size:16px}
+.cart-line .variant{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-top:3px}
+.cart-line .l-price{font-family:var(--mono);font-size:14px;margin-top:8px;color:var(--gold2)}
+.cart-line-right{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.qty.small button{width:34px;height:38px;font-size:16px}
+.qty.small span{min-width:32px;font-size:14px}
+.remove{background:none;border:none;font-family:var(--mono);font-size:11.5px;color:var(--dim);text-decoration:underline}
+.remove:hover{color:#FF7A7A}
+.summary{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px;position:sticky;top:100px;
+}
+.summary h3{font-size:20px;margin-bottom:18px}
+.sum-row{display:flex;justify-content:space-between;font-size:14.5px;padding:9px 0;color:var(--muted)}
+.sum-row b{color:var(--text);font-family:var(--mono)}
+.sum-row.total{border-top:1px solid var(--line2);margin-top:10px;padding-top:16px;font-size:16px;color:var(--text)}
+.sum-row.total b{font-size:22px;font-family:var(--display);color:var(--gold)}
+.free-ship{
+  margin:14px 0;font-family:var(--mono);font-size:11.5px;color:var(--gold2);
+  background:rgba(242,177,56,.08);border:1px dashed rgba(242,177,56,.4);
+  border-radius:10px;padding:10px 14px;text-align:center;
+}
+.empty-state{text-align:center;padding:80px 20px}
+.empty-state .big{font-size:52px;margin-bottom:16px}
+.empty-state h2{margin-bottom:10px}
+.empty-state p{color:var(--muted);margin-bottom:28px}
+
+/* ============ checkout / payment ============ */
+.steps{display:flex;gap:6px;font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.1em;margin:26px 0 8px;flex-wrap:wrap}
+.step{display:flex;align-items:center;gap:8px;color:var(--dim)}
+.step .dot{width:22px;height:22px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;font-size:10px}
+.step.done .dot,.step.now .dot{background:var(--gold);border-color:var(--gold);color:#1A1405}
+.step.now{color:var(--gold)}
+.step.done{color:var(--muted)}
+.step::after{content:"—";margin-left:6px;color:var(--line2)}
+.step:last-child::after{content:""}
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(22px,3vw,32px);margin-bottom:20px}
+.form-card h3{font-size:19px;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.form-card h3 .n{
+  width:26px;height:26px;border-radius:8px;background:rgba(242,177,56,.14);
+  border:1px solid rgba(242,177,56,.35);color:var(--gold);
+  font-family:var(--mono);font-size:13px;display:grid;place-items:center;
+}
+.form-2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+@media(max-width:640px){.form-2{grid-template-columns:1fr}}
+
+.pay-methods{display:flex;flex-direction:column;gap:12px}
+.pay-opt{
+  display:flex;align-items:center;gap:16px;border:1px solid var(--line2);
+  border-radius:14px;padding:18px 20px;background:var(--bg2);cursor:pointer;
+  transition:border-color .15s,background .15s;
+}
+.pay-opt:hover{border-color:var(--gold)}
+.pay-opt.sel{border-color:var(--gold);background:rgba(242,177,56,.07);box-shadow:0 0 0 1px var(--gold)}
+.pay-opt input{accent-color:var(--gold);width:18px;height:18px}
+.pay-opt .p-ic{
+  width:44px;height:44px;border-radius:11px;background:var(--surface2);
+  display:grid;place-items:center;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--gold);
+  border:1px solid var(--line);flex-shrink:0;
+}
+.pay-opt b{display:block;font-size:15px}
+.pay-opt span{font-size:12.5px;color:var(--dim)}
+.pay-detail{display:none;margin-top:16px;padding-top:16px;border-top:1px dashed var(--line2)}
+.pay-detail.show{display:block}
+.secure-note{
+  display:flex;gap:10px;align-items:center;font-family:var(--mono);font-size:11.5px;color:var(--dim);
+  margin-top:18px;justify-content:center;
+}
+.secure-note svg{width:14px;height:14px;stroke:var(--gold);fill:none;stroke-width:2}
+
+/* ============ success ============ */
+.success-wrap{max-width:620px;margin:0 auto;text-align:center;padding:clamp(50px,8vw,90px) 0}
+.check-ring{
+  width:96px;height:96px;border-radius:50%;margin:0 auto 28px;
+  background:radial-gradient(circle,rgba(90,200,120,.2),transparent 70%);
+  border:2px solid #5AC878;display:grid;place-items:center;
+  animation:pop .5s cubic-bezier(.2,1.6,.4,1);
+}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
+.check-ring svg{width:44px;height:44px;stroke:#8FE388;fill:none;stroke-width:2.5}
+.order-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px;margin:30px 0;text-align:left;
+}
+.order-card .oid{font-family:var(--mono);color:var(--gold);font-size:14px}
+
+/* ============ search overlay ============ */
+.overlay{
+  position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.8);backdrop-filter:blur(10px);
+  display:none;align-items:flex-start;justify-content:center;padding:12vh 20px 20px;
+}
+.overlay.show{display:flex}
+.search-panel{width:min(640px,100%);animation:pageIn .25s ease}
+.search-bar{
+  display:flex;align-items:center;gap:14px;background:var(--surface);
+  border:1px solid var(--line2);border-radius:16px;padding:6px 6px 6px 22px;
+  box-shadow:0 40px 80px -20px rgba(0,0,0,.8);
+}
+.search-bar svg{width:20px;height:20px;stroke:var(--dim);fill:none;stroke-width:2;flex-shrink:0}
+.search-bar input{flex:1;background:none;border:none;outline:none;color:var(--text);font-size:17px;padding:14px 0}
+.search-bar .btn{padding:12px 22px}
+.search-results{margin-top:14px;display:flex;flex-direction:column;gap:10px}
+.sr-item{
+  display:flex;align-items:center;gap:16px;background:var(--surface);
+  border:1px solid var(--line);border-radius:14px;padding:12px 16px;text-align:left;width:100%;
+  transition:border-color .15s;
+}
+.sr-item:hover{border-color:var(--gold)}
+.sr-item .thumb{width:52px;height:52px;border-radius:10px;background:var(--bg2);display:grid;place-items:center;border:1px solid var(--line)}
+.sr-item .thumb svg{width:32px}
+.sr-item b{display:block;font-size:14.5px}
+.sr-item span{font-family:var(--mono);font-size:12px;color:var(--dim)}
+.sr-item .p{margin-left:auto;font-family:var(--mono);color:var(--gold2);font-size:14px}
+.sr-empty{color:var(--dim);font-family:var(--mono);font-size:13px;text-align:center;padding:20px}
+
+/* ============ modal (account) ============ */
+.modal{
+  position:fixed;inset:0;z-index:120;background:rgba(8,9,12,.8);backdrop-filter:blur(10px);
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.modal.show{display:flex}
+.modal-card{
+  width:min(440px,100%);background:var(--surface);border:1px solid var(--line2);
+  border-radius:20px;padding:32px;position:relative;animation:pageIn .25s ease;
+  box-shadow:0 50px 100px -20px rgba(0,0,0,.9);
+}
+.modal-card h3{font-size:24px;margin-bottom:6px}
+.modal-card .sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.modal-x{
+  position:absolute;top:18px;right:18px;width:34px;height:34px;border-radius:10px;
+  border:1px solid var(--line);background:var(--bg2);font-size:16px;color:var(--muted);
+}
+.modal-x:hover{color:var(--text);border-color:var(--line2)}
+
+/* ============ footer ============ */
+footer.site{border-top:1px solid var(--line);background:var(--bg2);padding:clamp(44px,6vw,72px) 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:clamp(24px,3vw,48px)}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+.foot-grid h5{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-bottom:16px}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:10px}
+.foot-grid a{text-decoration:none;color:var(--muted);font-size:14px}
+.foot-grid a:hover{color:var(--gold)}
+.foot-brand p{color:var(--muted);font-size:14px;margin-top:14px;max-width:34ch}
+.sub-row{display:flex;gap:10px;margin-top:14px}
+.sub-row input{
+  flex:1;padding:13px 16px;border-radius:12px;border:1px solid var(--line2);
+  background:var(--bg);color:var(--text);outline:none;
+}
+.sub-row input:focus{border-color:var(--gold)}
+.foot-base{
+  border-top:1px solid var(--line);margin-top:44px;padding-top:24px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11.5px;color:var(--dim);
+}
+
+/* ============ toast ============ */
+.toast{
+  position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--surface2);border:1px solid var(--gold);color:var(--text);
+  font-size:14px;padding:14px 24px;border-radius:14px;opacity:0;pointer-events:none;
+  transition:opacity .25s,transform .25s;z-index:200;
+  box-shadow:0 20px 50px -12px rgba(0,0,0,.8);max-width:calc(100vw - 40px);
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease}
+.reveal.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MB44KDBH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="announce">Free shipping over ₹999 &nbsp;·&nbsp; COD across India &nbsp;·&nbsp; Every batch lab-tested</div>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#/"><span class="mark">F</span>Fit<em>Fuel</em></a>
+    <ul class="nav-links">
+      <li><a href="#/" data-nav="home">Home</a></li>
+      <li><a href="#/shop" data-nav="shop">Shop</a></li>
+      <li><a href="#/product/whey" data-nav="">Whey</a></li>
+      <li><a href="#/product/creatine" data-nav="">Creatine</a></li>
+      <li><a href="#/product/preworkout" data-nav="">Pre-Workout</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="icon-btn" aria-label="Search products" onclick="openSearch()">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="Create account" onclick="openModal('registerModal')">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6.5 8-6.5S20 17 20 21"/></svg>
+      </button>
+      <button class="icon-btn" aria-label="View cart" onclick="go('#/cart')">
+        <svg viewBox="0 0 24 24"><path d="M6 7h14l-1.5 9.5A2 2 0 0 1 16.5 18h-8A2 2 0 0 1 6.5 16.5L5 4H2.5"/><circle cx="9.5" cy="21" r="1"/><circle cx="16.5" cy="21" r="1"/></svg>
+        <span class="cart-count hidden" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app">
+
+<!-- ============================================================
+     PAGE: HOME
+============================================================ -->
+<div class="page" id="p-home">
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Engineered in India · Batch-Tested · FSSAI Licensed</span>
+        <h1>Serious fuel for<br><span class="grad">serious lifters.</span></h1>
+        <p class="lede">Whey protein, creatine and pre-workout with clinical doses, full label disclosure and a lab report behind every batch. No blends. No spiking. No excuses.</p>
+        <div class="hero-actions">
+          <button class="btn btn-gold" onclick="trackCTA('hero_shop');go('#/shop')">Shop the Range →</button>
+          <button class="btn btn-line" onclick="go('#/product/whey')">Explore Whey</button>
+        </div>
+        <div class="hero-proof">
+          <div class="proof"><b>24<i>g</i></b><span>protein / scoop</span></div>
+          <div class="proof"><b>4.8<i>★</i></b><span>12,400+ reviews</span></div>
+          <div class="proof"><b>1L<i>+</i></b><span>orders shipped</span></div>
+          <div class="proof"><b>100<i>%</i></b><span>batches tested</span></div>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <div class="halo"></div>
+        <div class="ring"></div>
+        <div class="hero-tub" id="heroTub"></div>
+        <div class="hero-chip chip-1"><b>0g</b>added sugar</div>
+        <div class="hero-chip chip-2"><b>5.4g</b>BCAAs / serve</div>
+        <div class="hero-chip chip-3"><b>NABL</b>lab certified</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack"><span>24g protein per scoop</span><span>Free shipping over ₹999</span><span>COD across 27,000+ pin codes</span><span>NABL batch reports</span><span>No amino spiking</span><span>7-day easy returns</span></div>
+  </div>
+
+  <!-- products -->
+  <section id="home-products">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">The Range</span>
+          <h2>Three products.<br>Engineered, not marketed.</h2>
+        </div>
+        <button class="btn btn-line" onclick="go('#/shop')">View All →</button>
+      </div>
+      <div class="product-grid" id="homeGrid"></div>
+    </div>
+  </section>
+
+  <!-- benefits -->
+  <section class="benefits">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Why FitFuel</span>
+          <h2>Built different, on purpose.</h2>
+          <p>Most supplements in India are imported at a markup or made cheap and spiked. FitFuel is neither.</p>
+        </div>
+      </div>
+      <div class="bene-grid">
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v5.5L4.7 18a2 2 0 0 0 1.8 3h11a2 2 0 0 0 1.8-3L14 8.5V3"/><path d="M7.5 15h9"/></svg></div>
+          <h3>Every batch lab-tested</h3>
+          <p>NABL-accredited labs verify protein content, heavy metals and amino spiking. Scan the QR on your tub for the actual certificate.</p>
+        </div>
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M7 21h10"/></svg></div>
+          <h3>Clinically dosed</h3>
+          <p>24g protein, 3g creatine, 200mg caffeine — the numbers on the front are the numbers inside. Zero proprietary blends.</p>
+        </div>
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5.5"/></svg></div>
+          <h3>Made for Indian stomachs</h3>
+          <p>Added lactase + protease enzymes in every whey batch, because most Indian adults are lactose-sensitive. Less bloating, better absorption.</p>
+        </div>
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+          <h3>Performance you can feel</h3>
+          <p>Faster recovery from whey, measurable strength gains from creatine, clean sustained energy from pre-workout. No crash, no jitters.</p>
+        </div>
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10h4l3 3v4h-7M6 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></div>
+          <h3>Fast delivery + COD</h3>
+          <p>2–5 day delivery across 27,000+ pin codes from Chennai and Gurugram warehouses. Cash on delivery included.</p>
+        </div>
+        <div class="bene reveal">
+          <div class="b-ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Honest pricing</h3>
+          <p>GMP-certified Indian manufacturing. You pay for protein — not customs duty, shipping containers or celebrity endorsements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials -->
+  <section id="home-reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Reviews</span>
+          <h2>Lifters who switched.</h2>
+          <p>4.8/5 average across 12,400+ verified reviews.</p>
+        </div>
+      </div>
+      <div class="tst-grid">
+        <article class="tst reveal">
+          <div class="rating">★★★★★</div>
+          <p>"Used imported whey for three years — honestly can't tell the difference, except my wallet can. The batch report QR is genius. Mixes clean, zero bloating."</p>
+          <div class="tst-foot">
+            <div class="avatar" style="background:linear-gradient(135deg,#FFD98A,#E89B3C)">AM</div>
+            <div><b>Arjun Menon</b><span>Powerlifter · Kochi · Whey</span></div>
+          </div>
+        </article>
+        <article class="tst reveal">
+          <div class="rating">★★★★★</div>
+          <p>"Creatine is creatine, but most brands here sell 100g at the price of 250g. FitFuel's pricing is fair and it dissolves properly — no sand at the bottom of my shaker."</p>
+          <div class="tst-foot">
+            <div class="avatar" style="background:linear-gradient(135deg,#B3E5FC,#4FC3F7)">PS</div>
+            <div><b>Priya Sharma</b><span>CrossFit athlete · Bengaluru · Creatine</span></div>
+          </div>
+        </article>
+        <article class="tst reveal">
+          <div class="rating">★★★★☆</div>
+          <p>"Pre-workout hits without the crash or itchy face. 200mg caffeine is the sweet spot for 6 AM sessions. Kokum Lime is genuinely good — very desi, very refreshing."</p>
+          <div class="tst-foot">
+            <div class="avatar" style="background:linear-gradient(135deg,#FF9BB0,#FF5470)">RK</div>
+            <div><b>Rahul Krishnan</b><span>Marathon runner · Chennai · Pre-Workout</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- lead form -->
+  <section id="home-lead">
+    <div class="wrap">
+      <div class="lead-box reveal">
+        <div>
+          <span class="eyebrow">Free Coaching Asset</span>
+          <h2>Get your free 8-week muscle-building plan.</h2>
+          <p>Built by our sports nutritionists — training split, macro targets for Indian diets, and supplement timing. Straight to your inbox, free.</p>
+        </div>
+        <form id="leadForm" novalidate>
+          <div class="field"><label for="leadName">Your name</label><input id="leadName" type="text" placeholder="Arjun Menon" required><div class="err">Please enter your name</div></div>
+          <div class="field"><label for="leadEmail">Email</label><input id="leadEmail" type="email" placeholder="you@email.com" required><div class="err">Enter a valid email</div></div>
+          <div class="field"><label for="leadGoal">Primary goal</label>
+            <select id="leadGoal"><option>Build muscle</option><option>Lose fat</option><option>Improve strength</option><option>General fitness</option></select>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit">Send Me the Plan →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="home-faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div><span class="eyebrow">FAQs</span><h2>Straight answers.</h2></div>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq"><button class="faq-q" aria-expanded="false">How do I know FitFuel isn't amino-spiked?<span class="ic">+</span></button>
+          <div class="faq-a"><p>Every batch is tested at an NABL-accredited third-party lab for total protein by amino acid profile — the test that actually catches spiking. Scan the QR on your tub to view your batch's certificate of analysis. If a report fails, that batch never ships.</p></div></div>
+        <div class="faq"><button class="faq-q" aria-expanded="false">Is FitFuel Whey okay if I'm lactose intolerant?<span class="ic">+</span></button>
+          <div class="faq-a"><p>Our whey includes added lactase and protease enzymes, which most lactose-sensitive users tolerate well. If you're severely intolerant, start with half a scoop and see how you respond.</p></div></div>
+        <div class="faq"><button class="faq-q" aria-expanded="false">When should I take creatine? Do I need to load?<span class="ic">+</span></button>
+          <div class="faq-a"><p>Timing doesn't matter much — consistency does. Take 3g daily, any time. Loading (20g/day for a week) saturates muscles faster but isn't necessary; 3g daily reaches the same point in 3–4 weeks. Stay hydrated either way.</p></div></div>
+        <div class="faq"><button class="faq-q" aria-expanded="false">Is Cash on Delivery available? What about returns?<span class="ic">+</span></button>
+          <div class="faq-a"><p>COD is available across 27,000+ pin codes with a ₹49 handling fee. Sealed products can be returned within 7 days. Damaged-in-transit orders are replaced free — just share a photo within 48 hours of delivery.</p></div></div>
+        <div class="faq"><button class="faq-q" aria-expanded="false">How much caffeine is in the pre-workout?<span class="ic">+</span></button>
+          <div class="faq-a"><p>200mg per scoop — roughly two strong filter coffees. Fine for daily use for most healthy adults; avoid within 6 hours of bedtime, and skip it if you're pregnant, caffeine-sensitive or have a heart condition.</p></div></div>
+        <div class="faq"><button class="faq-q" aria-expanded="false">How fast is delivery?<span class="ic">+</span></button>
+          <div class="faq-a"><p>Metros: 2–3 days. Rest of India: 3–5 days. Orders before 2 PM ship the same day from our Chennai and Gurugram warehouses. Free shipping above ₹999.</p></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================================================
+     PAGE: SHOP
+============================================================ -->
+<div class="page" id="p-shop">
+  <div class="wrap">
+    <nav class="crumbs"><a href="#/">Home</a> / <span>Shop</span></nav>
+    <div class="section-head" style="margin-top:26px">
+      <div>
+        <span class="eyebrow">All Products</span>
+        <h2>The full range.</h2>
+        <p>Three SKUs, multiple flavours and sizes. Everything batch-tested, everything in stock.</p>
+      </div>
+      <button class="btn btn-line" onclick="openSearch()">Search products</button>
+    </div>
+    <div class="product-grid" id="shopGrid" style="padding-bottom:80px"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE: PRODUCT DETAIL (rendered by JS)
+============================================================ -->
+<div class="page" id="p-product">
+  <div class="wrap" id="pdpRoot"></div>
+</div>
+
+<!-- ============================================================
+     PAGE: CART
+============================================================ -->
+<div class="page" id="p-cart">
+  <div class="wrap">
+    <nav class="crumbs"><a href="#/">Home</a> / <span>Cart</span></nav>
+    <div id="cartRoot"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE: CHECKOUT (address)
+============================================================ -->
+<div class="page" id="p-checkout">
+  <div class="wrap">
+    <nav class="crumbs"><a href="#/">Home</a> / <a href="#/cart">Cart</a> / <span>Checkout</span></nav>
+    <div class="steps">
+      <div class="step done"><span class="dot">✓</span>Cart</div>
+      <div class="step now"><span class="dot">2</span>Address</div>
+      <div class="step"><span class="dot">3</span>Payment</div>
+      <div class="step"><span class="dot">4</span>Done</div>
+    </div>
+    <div class="cart-layout">
+      <div>
+        <form id="addressForm" novalidate>
+          <div class="form-card">
+            <h3><span class="n">1</span>Contact details</h3>
+            <div class="form-2">
+              <div class="field"><label for="coName">Full name *</label><input id="coName" required placeholder="Arjun Menon"><div class="err">Required</div></div>
+              <div class="field"><label for="coPhone">Phone (WhatsApp) *</label><input id="coPhone" type="tel" required placeholder="98765 43210" maxlength="10"><div class="err">Enter a valid 10-digit number</div></div>
+            </div>
+            <div class="field"><label for="coEmail">Email *</label><input id="coEmail" type="email" required placeholder="you@email.com"><div class="err">Enter a valid email</div></div>
+          </div>
+          <div class="form-card">
+            <h3><span class="n">2</span>Delivery address</h3>
+            <div class="field"><label for="coAddr">Address (house no., street, area) *</label><input id="coAddr" required placeholder="12/4, 3rd Cross Street, Anna Nagar"><div class="err">Required</div></div>
+            <div class="form-2">
+              <div class="field"><label for="coCity">City *</label><input id="coCity" required placeholder="Chennai"><div class="err">Required</div></div>
+              <div class="field"><label for="coPin">PIN code *</label><input id="coPin" required maxlength="6" placeholder="600040"><div class="err">Enter a 6-digit PIN</div></div>
+            </div>
+            <div class="field"><label for="coState">State *</label>
+              <select id="coState"><option>Tamil Nadu</option><option>Karnataka</option><option>Maharashtra</option><option>Delhi NCR</option><option>Telangana</option><option>Kerala</option><option>West Bengal</option><option>Gujarat</option><option>Other</option></select>
+            </div>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit" style="font-size:16px;padding:17px">Continue to Payment →</button>
+          <div class="secure-note"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Your details are encrypted and never shared</div>
+        </form>
+      </div>
+      <aside class="summary" id="checkoutSummary"></aside>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE: PAYMENT
+============================================================ -->
+<div class="page" id="p-payment">
+  <div class="wrap">
+    <nav class="crumbs"><a href="#/">Home</a> / <a href="#/cart">Cart</a> / <a href="#/checkout">Checkout</a> / <span>Payment</span></nav>
+    <div class="steps">
+      <div class="step done"><span class="dot">✓</span>Cart</div>
+      <div class="step done"><span class="dot">✓</span>Address</div>
+      <div class="step now"><span class="dot">3</span>Payment</div>
+      <div class="step"><span class="dot">4</span>Done</div>
+    </div>
+    <div class="cart-layout">
+      <div>
+        <div class="form-card">
+          <h3><span class="n">3</span>Choose payment method</h3>
+          <div class="pay-methods" id="payMethods">
+            <label class="pay-opt sel" data-method="upi">
+              <input type="radio" name="pay" value="upi" checked>
+              <div class="p-ic">UPI</div>
+              <div><b>UPI</b><span>GPay, PhonePe, Paytm & more — instant</span></div>
+            </label>
+            <label class="pay-opt" data-method="card">
+              <input type="radio" name="pay" value="card">
+              <div class="p-ic">CARD</div>
+              <div><b>Credit / Debit Card</b><span>Visa, Mastercard, RuPay, Amex</span></div>
+            </label>
+            <label class="pay-opt" data-method="cod">
+              <input type="radio" name="pay" value="cod">
+              <div class="p-ic">COD</div>
+              <div><b>Cash on Delivery</b><span>+ ₹49 handling fee</span></div>
+            </label>
+          </div>
+
+          <div class="pay-detail show" id="detail-upi">
+            <div class="field"><label for="upiId">UPI ID</label><input id="upiId" placeholder="yourname@okhdfcbank"></div>
+          </div>
+          <div class="pay-detail" id="detail-card">
+            <div class="field"><label for="cardNum">Card number</label><input id="cardNum" placeholder="4111 1111 1111 1111" maxlength="19"></div>
+            <div class="form-2">
+              <div class="field"><label for="cardExp">Expiry</label><input id="cardExp" placeholder="MM/YY" maxlength="5"></div>
+              <div class="field"><label for="cardCvv">CVV</label><input id="cardCvv" type="password" placeholder="•••" maxlength="4"></div>
+            </div>
+          </div>
+          <div class="pay-detail" id="detail-cod">
+            <p style="font-size:13.5px;color:var(--muted)">Pay in cash or UPI when your order arrives. A ₹49 COD handling fee applies and is added to your total.</p>
+          </div>
+        </div>
+        <button class="btn btn-gold btn-block" id="payBtn" style="font-size:16px;padding:17px">Pay Securely →</button>
+        <div class="secure-note"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>256-bit SSL · PCI-DSS compliant · Powered by Razorpay</div>
+      </div>
+      <aside class="summary" id="paymentSummary"></aside>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE: ORDER SUCCESS
+============================================================ -->
+<div class="page" id="p-success">
+  <div class="wrap success-wrap" id="successRoot"></div>
+</div>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#/"><span class="mark">F</span>Fit<em>Fuel</em></a>
+        <p>Premium sports nutrition, engineered and manufactured in India. Every batch tested, every label honest.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="#/product/whey">Whey Protein</a></li>
+          <li><a href="#/product/creatine">Creatine</a></li>
+          <li><a href="#/product/preworkout">Pre-Workout</a></li>
+          <li><a href="#/shop">All Products</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#/" onclick="track('Lead',{content_name:'contact_link'})">Contact Us</a></li>
+          <li><a href="#/">Lab Reports</a></li>
+          <li><a href="#/">Shipping & Returns</a></li>
+          <li><a href="#/">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Join the Fuel List</h5>
+        <p style="color:var(--muted);font-size:13.5px">Training tips, drop alerts and subscriber-only offers. No spam.</p>
+        <form class="sub-row" id="subForm" novalidate>
+          <input type="email" id="subEmail" placeholder="you@email.com" required aria-label="Email for newsletter">
+          <button class="btn btn-gold" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 FitFuel Nutrition Pvt. Ltd. · FSSAI Lic. 12345678901234</span>
+      <span>Chennai · Gurugram · hello@fitfuel.in</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= SEARCH OVERLAY ================= -->
+<div class="overlay" id="searchOverlay" role="dialog" aria-label="Search products">
+  <div class="search-panel">
+    <form class="search-bar" id="searchForm">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="searchInput" placeholder="Search whey, creatine, pre-workout…" autocomplete="off">
+      <button class="btn btn-gold" type="submit">Search</button>
+    </form>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ================= REGISTER MODAL ================= -->
+<div class="modal" id="registerModal" role="dialog" aria-label="Create account">
+  <div class="modal-card">
+    <button class="modal-x" onclick="closeModal('registerModal')" aria-label="Close">✕</button>
+    <h3>Create your account</h3>
+    <p class="sub">Track orders, reorder in one tap, and unlock member pricing.</p>
+    <form id="registerForm" novalidate>
+      <div class="field"><label for="regName">Full name</label><input id="regName" required placeholder="Arjun Menon"><div class="err">Required</div></div>
+      <div class="field"><label for="regEmail">Email</label><input id="regEmail" type="email" required placeholder="you@email.com"><div class="err">Enter a valid email</div></div>
+      <div class="field"><label for="regPass">Password</label><input id="regPass" type="password" required placeholder="Min. 6 characters" minlength="6"><div class="err">Minimum 6 characters</div></div>
+      <button class="btn btn-gold btn-block" type="submit">Create Account</button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =====================================================================
+   FITFUEL v2 — catalogue · SVG renders · router · cart · tracking
+   ===================================================================== */
+
+"use strict";
+
+/* ------------------------------------------------------------------
+   0. TRACKING LAYER — Meta Pixel + GTM dataLayer, fired together.
+      Standard events wired end-to-end:
+      PageView · ViewContent · Search · AddToCart · InitiateCheckout ·
+      AddPaymentInfo · Purchase · Lead · CompleteRegistration · Subscribe
+------------------------------------------------------------------- */
+window.dataLayer = window.dataLayer || [];
+
+function track(eventName, params){
+  params = params || {};
+  // Meta Pixel (browser). Mirror server-side via CAPI using event_id for dedup.
+  const eventId = 'ff_' + Date.now() + '_' + Math.random().toString(36).slice(2,8);
+  try{ if(typeof fbq === 'function') fbq('track', eventName, params, {eventID: eventId}); }catch(e){}
+  // GTM dataLayer — GA4 + CAPI tag can both read from here
+  window.dataLayer.push(Object.assign({event:'fb_' + eventName, event_id:eventId}, params));
+}
+
+function trackCTA(name){ window.dataLayer.push({event:'cta_click', cta_name:name}); }
+
+/* ------------------------------------------------------------------
+   1. CATALOGUE — variants: flavours × sizes with independent pricing
+------------------------------------------------------------------- */
+const CATALOG = {
+  whey: {
+    id:'whey', name:'FitFuel Whey Protein', category:'Protein',
+    accent:'var(--whey)', hex:'#E89B3C',
+    glow:'rgba(232,155,60,.18)',
+    badge:'Bestseller', rating:'★★★★★', reviews:'6,214',
+    tagline:'24g protein · 5.4g BCAAs · added digestive enzymes',
+    desc:'Fast-absorbing whey concentrate blend with 24g protein per 33g scoop. Added lactase and protease for easy digestion, zero added sugar, and a NABL lab report behind every batch.',
+    flavours:[
+      {id:'choc', name:'Double Chocolate'},
+      {id:'coffee', name:'Filter Coffee'},
+      {id:'kulfi', name:'Malai Kulfi'},
+      {id:'unfl', name:'Unflavoured'}
+    ],
+    sizes:[
+      {id:'1kg', name:'1 kg', serves:'30 servings', price:2499, mrp:3299},
+      {id:'2kg', name:'2 kg', serves:'60 servings', price:4599, mrp:6199}
+    ],
+    facts:[['Protein','24 g'],['BCAAs','5.4 g'],['Added sugar','0 g'],['Calories','128 kcal'],['Digestive enzymes','100 mg']]
+  },
+  creatine: {
+    id:'creatine', name:'FitFuel Creatine', category:'Strength',
+    accent:'var(--creatine)', hex:'#4FC3F7',
+    glow:'rgba(79,195,247,.16)',
+    badge:'Daily Driver', rating:'★★★★★', reviews:'4,102',
+    tagline:'100% micronised creatine monohydrate · 200 mesh',
+    desc:'The most researched supplement in sport. 3g of pure micronised creatine monohydrate per serving — 200-mesh fine so it dissolves completely, with no grit at the bottom of your shaker.',
+    flavours:[{id:'unfl', name:'Unflavoured'}],
+    sizes:[
+      {id:'100g', name:'100 g', serves:'33 servings', price:449, mrp:599},
+      {id:'250g', name:'250 g', serves:'83 servings', price:899, mrp:1199}
+    ],
+    facts:[['Creatine monohydrate','3 g'],['Mesh size','200'],['Purity','99.9%'],['Fillers','0 g'],['Loading required','No']]
+  },
+  preworkout: {
+    id:'preworkout', name:'FitFuel Pre-Workout', category:'Energy',
+    accent:'var(--prewo)', hex:'#FF5470',
+    glow:'rgba(255,84,112,.16)',
+    badge:'New Flavour', rating:'★★★★☆', reviews:'2,084',
+    tagline:'200mg caffeine · 3.2g beta-alanine · full disclosure',
+    desc:'Clean, sustained energy with 200mg caffeine and 3.2g beta-alanine per scoop. Every ingredient dosed at clinical levels and printed on the label. No blends, no crash, no itchy-face surprise doses.',
+    flavours:[
+      {id:'kokum', name:'Kokum Lime'},
+      {id:'cola', name:'Masala Cola'},
+      {id:'orange', name:'Santra Blast'}
+    ],
+    sizes:[
+      {id:'300g', name:'300 g', serves:'30 servings', price:1299, mrp:1699}
+    ],
+    facts:[['Caffeine','200 mg'],['Beta-alanine','3.2 g'],['L-citrulline','4 g'],['Added sugar','0 g'],['Crash','None']]
+  }
+};
+
+const PRODUCT_ORDER = ['whey','creatine','preworkout'];
+
+/* ------------------------------------------------------------------
+   2. ELITE SVG PRODUCT RENDERS — parametric premium tub
+------------------------------------------------------------------- */
+function tubSVG(p, opts){
+  opts = opts || {};
+  const uid = p.id + (opts.uid || '');
+  const flavour = opts.flavour || p.flavours[0].name;
+  const size = opts.size || p.sizes[p.sizes.length-1].name;
+  const c = p.hex;
+  const statTop = p.id==='whey' ? '24g' : p.id==='creatine' ? '3g' : '200mg';
+  const statSub = p.id==='whey' ? 'PROTEIN / SCOOP' : p.id==='creatine' ? 'CREATINE / SERVE' : 'CAFFEINE / SCOOP';
+  const catWord = p.category.toUpperCase();
+
+  return `
+<svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${p.name} — ${flavour}, ${size}">
+  <defs>
+    <linearGradient id="body-${uid}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#05060A"/>
+      <stop offset=".18" stop-color="#1B1F2A"/>
+      <stop offset=".42" stop-color="#3A4152"/>
+      <stop offset=".5" stop-color="#495166"/>
+      <stop offset=".58" stop-color="#3A4152"/>
+      <stop offset=".85" stop-color="#141822"/>
+      <stop offset="1" stop-color="#040508"/>
+    </linearGradient>
+    <linearGradient id="lid-${uid}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0A0C12"/>
+      <stop offset=".3" stop-color="#2E3444"/>
+      <stop offset=".5" stop-color="#4A5268"/>
+      <stop offset=".7" stop-color="#2E3444"/>
+      <stop offset="1" stop-color="#0A0C12"/>
+    </linearGradient>
+    <linearGradient id="band-${uid}" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${c}" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="${c}"/>
+      <stop offset="1" stop-color="${c}" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="shine-${uid}" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lidtop-${uid}" cx=".5" cy=".35" r=".8">
+      <stop offset="0" stop-color="#59627C"/>
+      <stop offset="1" stop-color="#161A24"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="150" cy="382" rx="112" ry="14" fill="#000" opacity=".5"/>
+
+  <!-- tub body -->
+  <path d="M42 96 L42 344 Q42 372 150 372 Q258 372 258 344 L258 96 Z" fill="url(#body-${uid})"/>
+  <!-- bottom rim light -->
+  <path d="M42 344 Q42 372 150 372 Q258 372 258 344" fill="none" stroke="${c}" stroke-opacity=".28" stroke-width="2"/>
+
+  <!-- lid -->
+  <path d="M34 62 L34 96 Q34 116 150 116 Q266 116 266 96 L266 62 Z" fill="url(#lid-${uid})"/>
+  <ellipse cx="150" cy="62" rx="116" ry="21" fill="url(#lidtop-${uid})"/>
+  <ellipse cx="150" cy="62" rx="116" ry="21" fill="none" stroke="#5A6379" stroke-opacity=".5"/>
+  <ellipse cx="150" cy="60" rx="84" ry="13" fill="none" stroke="#6B7590" stroke-opacity=".45"/>
+  <ellipse cx="150" cy="60" rx="46" ry="7" fill="#0D1017"/>
+  <!-- lid grip lines -->
+  ${[...Array(9)].map((_,i)=>`<line x1="${52+i*24.5}" y1="98" x2="${52+i*24.5}" y2="112" stroke="#0B0D13" stroke-width="5" opacity=".55"/>`).join('')}
+
+  <!-- label plate -->
+  <path d="M50 138 L50 320 Q50 342 150 342 Q250 342 250 320 L250 138 Q250 128 150 128 Q50 128 50 138 Z" fill="#0E1118"/>
+  <path d="M50 138 L50 320 Q50 342 150 342 Q250 342 250 320 L250 138 Q250 128 150 128 Q50 128 50 138 Z" fill="none" stroke="#232939" stroke-width="1"/>
+
+  <!-- accent band -->
+  <path d="M50 292 L250 292 L250 320 Q250 342 150 342 Q50 342 50 320 Z" fill="url(#band-${uid})"/>
+  <text x="150" y="322" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="12" font-weight="600" fill="#0B0C10" letter-spacing="3">${flavour.toUpperCase()}</text>
+
+  <!-- brand -->
+  <text x="150" y="168" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="24" font-weight="700" fill="#F4F2EC" letter-spacing="1">FIT<tspan fill="${c}">FUEL</tspan></text>
+  <line x1="86" y1="180" x2="214" y2="180" stroke="#2A3040" stroke-width="1"/>
+  <text x="150" y="198" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10.5" fill="#8B93A5" letter-spacing="4">${catWord}</text>
+
+  <!-- hero stat -->
+  <text x="150" y="248" text-anchor="middle" font-family="Space Grotesk,sans-serif" font-size="46" font-weight="700" fill="${c}">${statTop}</text>
+  <text x="150" y="268" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#9BA2B0" letter-spacing="2.5">${statSub}</text>
+
+  <!-- size chip -->
+  <rect x="112" y="276" width="76" height="1" fill="#2A3040"/>
+  <text x="150" y="288" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#6B7280" letter-spacing="2">${size.toUpperCase()} · LAB TESTED</text>
+
+  <!-- glass shine -->
+  <path d="M58 100 Q66 250 66 336 L92 342 Q80 240 76 100 Z" fill="url(#shine-${uid})" opacity=".14"/>
+  <path d="M228 104 Q234 240 232 334 L244 328 Q248 230 242 104 Z" fill="url(#shine-${uid})" opacity=".08"/>
+</svg>`;
+}
+
+/* ------------------------------------------------------------------
+   3. STORAGE-SAFE CART (memory fallback if storage unavailable)
+------------------------------------------------------------------- */
+const store = (()=> {
+  let mem = {};
+  let ok = false;
+  try { localStorage.setItem('__t','1'); localStorage.removeItem('__t'); ok = true; } catch(e){}
+  return {
+    get(k){ try{ return ok ? JSON.parse(localStorage.getItem(k)) : mem[k] || null; }catch(e){ return mem[k]||null; } },
+    set(k,v){ mem[k]=v; try{ if(ok) localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  };
+})();
+
+let cart = store.get('ff_cart') || []; // [{pid, flavourId, sizeId, qty}]
+let checkoutInfo = store.get('ff_checkout') || null;
+
+function saveCart(){ store.set('ff_cart', cart); updateCartBadge(); }
+
+function cartKey(l){ return l.pid + '|' + l.flavourId + '|' + l.sizeId; }
+function lineData(l){
+  const p = CATALOG[l.pid];
+  const fl = p.flavours.find(f=>f.id===l.flavourId) || p.flavours[0];
+  const sz = p.sizes.find(s=>s.id===l.sizeId) || p.sizes[0];
+  return { p, fl, sz, total: sz.price * l.qty };
+}
+function cartTotals(){
+  let count = 0, subtotal = 0, mrpTotal = 0;
+  cart.forEach(l=>{
+    const {sz} = lineData(l);
+    count += l.qty; subtotal += sz.price * l.qty; mrpTotal += sz.mrp * l.qty;
+  });
+  const shipping = subtotal === 0 ? 0 : (subtotal >= 999 ? 0 : 79);
+  return { count, subtotal, mrpTotal, saved: mrpTotal - subtotal, shipping, total: subtotal + shipping };
+}
+function fmt(n){ return '₹' + n.toLocaleString('en-IN'); }
+
+function gaItems(){
+  return cart.map(l=>{ const {p,fl,sz} = lineData(l);
+    return { item_id:`${p.id}-${sz.id}-${fl.id}`, item_name:p.name, item_variant:`${fl.name} / ${sz.name}`, price:sz.price, quantity:l.qty, item_brand:'FitFuel' };
+  });
+}
+function pixelContents(){
+  return cart.map(l=>{ const {p,fl,sz} = lineData(l);
+    return { id:`${p.id}-${sz.id}-${fl.id}`, quantity:l.qty, item_price:sz.price };
+  });
+}
+
+function updateCartBadge(){
+  const el = document.getElementById('cartCount');
+  const {count} = cartTotals();
+  el.textContent = count;
+  el.classList.toggle('hidden', count===0);
+}
+
+/* ------------------------------------------------------------------
+   4. CART OPERATIONS + AddToCart event
+------------------------------------------------------------------- */
+function addToCart(pid, flavourId, sizeId, qty){
+  qty = qty || 1;
+  const existing = cart.find(l => cartKey(l) === pid+'|'+flavourId+'|'+sizeId);
+  if(existing) existing.qty += qty; else cart.push({pid, flavourId, sizeId, qty});
+  saveCart();
+
+  const p = CATALOG[pid];
+  const sz = p.sizes.find(s=>s.id===sizeId);
+  const fl = p.flavours.find(f=>f.id===flavourId);
+
+  track('AddToCart', {
+    content_type:'product',
+    content_ids:[`${pid}-${sizeId}-${flavourId}`],
+    content_name:p.name,
+    contents:[{id:`${pid}-${sizeId}-${flavourId}`, quantity:qty, item_price:sz.price}],
+    value: sz.price * qty,
+    currency:'INR'
+  });
+
+  toast(`${p.name} (${fl.name}, ${sz.name}) added to cart`);
+}
+
+function changeQty(index, delta){
+  cart[index].qty += delta;
+  if(cart[index].qty <= 0) cart.splice(index,1);
+  saveCart(); renderCart(); renderSummaries();
+}
+function removeLine(index){
+  const {p} = lineData(cart[index]);
+  cart.splice(index,1);
+  saveCart(); renderCart(); renderSummaries();
+  toast(`${p.name} removed`);
+}
+
+/* ------------------------------------------------------------------
+   5. RENDER: product cards
+------------------------------------------------------------------- */
+function productCard(p){
+  const sz = p.sizes[0];
+  return `
+  <article class="pcard reveal" style="--pc:${p.accent};--pc-glow:${p.glow}">
+    <div class="pcard-visual" role="button" tabindex="0" onclick="go('#/product/${p.id}')" onkeydown="if(event.key==='Enter')go('#/product/${p.id}')" aria-label="View ${p.name}">
+      <span class="pcard-badge">● ${p.badge}</span>
+      ${tubSVG(p,{uid:'-card'})}
+    </div>
+    <div class="pcard-body">
+      <span class="pcard-cat">${p.category}</span>
+      <h3>${p.name}</h3>
+      <div class="pcard-flav">${p.tagline}</div>
+      <div class="rating">${p.rating}<small>${p.reviews} reviews</small></div>
+      <div class="pcard-foot">
+        <div class="price">${fmt(sz.price)}<span class="mrp">${fmt(sz.mrp)}</span></div>
+        <button class="mini-btn" onclick="go('#/product/${p.id}')">View →</button>
+      </div>
+    </div>
+  </article>`;
+}
+
+function renderGrids(){
+  const html = PRODUCT_ORDER.map(id=>productCard(CATALOG[id])).join('');
+  document.getElementById('homeGrid').innerHTML = html;
+  document.getElementById('shopGrid').innerHTML = html;
+  initReveal();
+}
+
+/* ------------------------------------------------------------------
+   6. RENDER: product detail page + ViewContent
+------------------------------------------------------------------- */
+const pdpState = { flavourId:null, sizeId:null, qty:1 };
+
+function renderPDP(pid){
+  const p = CATALOG[pid];
+  if(!p){ go('#/shop'); return; }
+  pdpState.flavourId = p.flavours[0].id;
+  pdpState.sizeId = p.sizes[0].id;
+  pdpState.qty = 1;
+
+  const root = document.getElementById('pdpRoot');
+  root.innerHTML = `
+  <nav class="crumbs"><a href="#/">Home</a> / <a href="#/shop">Shop</a> / <span>${p.name}</span></nav>
+  <div class="pdp" style="--pc:${p.accent};--pc-glow:${p.glow}">
+    <div class="pdp-stage" id="pdpStage">${tubSVG(p,{uid:'-pdp'})}</div>
+    <div class="pdp-info">
+      <span class="cat">${p.category} · ${p.badge}</span>
+      <h1>${p.name}</h1>
+      <div class="rating">${p.rating}<small>${p.reviews} verified reviews</small></div>
+      <p class="desc">${p.desc}</p>
+      <div class="pdp-price" id="pdpPrice"></div>
+      <div class="pdp-tax">Inclusive of all taxes · Free shipping over ₹999</div>
+
+      <div class="opt-group">
+        <div class="opt-label">Flavour · <b id="flavName"></b></div>
+        <div class="opt-row" id="flavRow"></div>
+      </div>
+      <div class="opt-group">
+        <div class="opt-label">Size · <b id="sizeName"></b></div>
+        <div class="opt-row" id="sizeRow"></div>
+      </div>
+
+      <div class="qty-row">
+        <div class="qty">
+          <button aria-label="Decrease quantity" onclick="pdpQty(-1)">−</button>
+          <span id="pdpQty">1</span>
+          <button aria-label="Increase quantity" onclick="pdpQty(1)">+</button>
+        </div>
+        <button class="btn btn-gold" id="pdpAdd">Add to Cart</button>
+        <button class="btn btn-line" id="pdpBuy">Buy Now</button>
+      </div>
+
+      <div class="pdp-meta">
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>NABL lab report on every batch — scan the QR on your tub</div>
+        <div class="row"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10h4l3 3v4h-7M6 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM18 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>Ships today if ordered before 2 PM · 2–5 day delivery</div>
+        <div class="row"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>7-day returns on sealed products · COD available</div>
+      </div>
+
+      <div class="pdp-facts">
+        <h4>Per Serving</h4>
+        ${p.facts.map(f=>`<div class="fact-line"><span>${f[0]}</span><b>${f[1]}</b></div>`).join('')}
+      </div>
+    </div>
+  </div>`;
+
+  renderPDPOptions(p);
+
+  document.getElementById('pdpAdd').onclick = ()=> addToCart(p.id, pdpState.flavourId, pdpState.sizeId, pdpState.qty);
+  document.getElementById('pdpBuy').onclick = ()=> { addToCart(p.id, pdpState.flavourId, pdpState.sizeId, pdpState.qty); go('#/cart'); };
+
+  const sz = p.sizes[0];
+  track('ViewContent', {
+    content_type:'product',
+    content_ids:[`${p.id}-${sz.id}-${p.flavours[0].id}`],
+    content_name:p.name,
+    content_category:p.category,
+    value:sz.price, currency:'INR'
+  });
+}
+
+function renderPDPOptions(p){
+  const fl = p.flavours.find(f=>f.id===pdpState.flavourId);
+  const sz = p.sizes.find(s=>s.id===pdpState.sizeId);
+
+  document.getElementById('flavName').textContent = fl.name;
+  document.getElementById('sizeName').textContent = `${sz.name} (${sz.serves})`;
+
+  document.getElementById('flavRow').innerHTML = p.flavours.map(f=>
+    `<button class="opt ${f.id===pdpState.flavourId?'sel':''}" onclick="selFlavour('${p.id}','${f.id}')">${f.name}</button>`).join('');
+  document.getElementById('sizeRow').innerHTML = p.sizes.map(s=>
+    `<button class="opt ${s.id===pdpState.sizeId?'sel':''}" onclick="selSize('${p.id}','${s.id}')">${s.name}<small>${s.serves} · ${fmt(s.price)}</small></button>`).join('');
+
+  const off = Math.round((1 - sz.price/sz.mrp)*100);
+  document.getElementById('pdpPrice').innerHTML =
+    `${fmt(sz.price)} <span class="mrp">${fmt(sz.mrp)}</span> <span class="save">SAVE ${off}%</span>`;
+  document.getElementById('pdpQty').textContent = pdpState.qty;
+  document.getElementById('pdpStage').innerHTML = tubSVG(p,{uid:'-pdp',flavour:fl.name,size:sz.name});
+}
+function selFlavour(pid,fid){ pdpState.flavourId=fid; renderPDPOptions(CATALOG[pid]); }
+function selSize(pid,sid){ pdpState.sizeId=sid; renderPDPOptions(CATALOG[pid]); }
+function pdpQty(d){ pdpState.qty = Math.max(1, Math.min(10, pdpState.qty+d)); document.getElementById('pdpQty').textContent = pdpState.qty; }
+
+/* ------------------------------------------------------------------
+   7. RENDER: cart page
+------------------------------------------------------------------- */
+function renderCart(){
+  const root = document.getElementById('cartRoot');
+  if(cart.length === 0){
+    root.innerHTML = `
+    <div class="empty-state">
+      <div class="big">🛒</div>
+      <h2>Your cart is empty</h2>
+      <p>Your muscles called. They want protein.</p>
+      <button class="btn btn-gold" onclick="go('#/shop')">Shop the Range →</button>
+    </div>`;
+    return;
+  }
+  const t = cartTotals();
+  root.innerHTML = `
+  <div class="section-head" style="margin-top:26px;margin-bottom:8px">
+    <div><span class="eyebrow">Your Cart</span><h2>${t.count} item${t.count>1?'s':''}, ready to ship.</h2></div>
+  </div>
+  <div class="cart-layout">
+    <div>
+      ${cart.map((l,i)=>{
+        const {p,fl,sz} = lineData(l);
+        return `
+        <div class="cart-line" style="--pc:${p.accent};--pc-glow:${p.glow}">
+          <div class="thumb">${tubSVG(p,{uid:'-c'+i,flavour:fl.name,size:sz.name})}</div>
+          <div>
+            <h4>${p.name}</h4>
+            <div class="variant">${fl.name} · ${sz.name} · ${sz.serves}</div>
+            <div class="l-price">${fmt(sz.price)} × ${l.qty} = <b>${fmt(sz.price*l.qty)}</b></div>
+          </div>
+          <div class="cart-line-right">
+            <div class="qty small">
+              <button aria-label="Decrease" onclick="changeQty(${i},-1)">−</button>
+              <span>${l.qty}</span>
+              <button aria-label="Increase" onclick="changeQty(${i},1)">+</button>
+            </div>
+            <button class="remove" onclick="removeLine(${i})">Remove</button>
+          </div>
+        </div>`;
+      }).join('')}
+      <button class="btn btn-line" onclick="go('#/shop')" style="margin-top:8px">← Continue Shopping</button>
+    </div>
+    <aside class="summary">
+      <h3>Order Summary</h3>
+      <div class="sum-row"><span>Subtotal</span><b>${fmt(t.subtotal)}</b></div>
+      <div class="sum-row"><span>You save</span><b style="color:#8FE388">− ${fmt(t.saved)}</b></div>
+      <div class="sum-row"><span>Shipping</span><b>${t.shipping===0?'FREE':fmt(t.shipping)}</b></div>
+      ${t.shipping>0?`<div class="free-ship">Add ${fmt(999-t.subtotal)} more for FREE shipping</div>`:`<div class="free-ship">✓ Free shipping unlocked</div>`}
+      <div class="sum-row total"><span>Total</span><b>${fmt(t.total)}</b></div>
+      <button class="btn btn-gold btn-block" style="margin-top:16px;font-size:16px" onclick="startCheckout()">Proceed to Checkout →</button>
+      <div class="secure-note"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure checkout · UPI, cards & COD</div>
+    </aside>
+  </div>`;
+}
+
+/* InitiateCheckout — fired when the user moves from cart to checkout */
+function startCheckout(){
+  const t = cartTotals();
+  track('InitiateCheckout', {
+    content_type:'product',
+    contents:pixelContents(),
+    num_items:t.count,
+    value:t.total, currency:'INR'
+  });
+  window.dataLayer.push({event:'begin_checkout', ecommerce:{currency:'INR', value:t.total, items:gaItems()}});
+  go('#/checkout');
+}
+
+/* ------------------------------------------------------------------
+   8. RENDER: order summaries (checkout + payment sidebars)
+------------------------------------------------------------------- */
+function summaryHTML(extraFee){
+  const t = cartTotals();
+  const total = t.total + (extraFee||0);
+  return `
+  <h3>Order Summary</h3>
+  ${cart.map(l=>{ const {p,fl,sz} = lineData(l);
+    return `<div class="sum-row"><span>${p.name} <span style="font-family:var(--mono);font-size:11px;color:var(--dim)">(${fl.name}, ${sz.name}) ×${l.qty}</span></span><b>${fmt(sz.price*l.qty)}</b></div>`;
+  }).join('')}
+  <div class="sum-row"><span>Shipping</span><b>${t.shipping===0?'FREE':fmt(t.shipping)}</b></div>
+  ${extraFee?`<div class="sum-row"><span>COD handling</span><b>${fmt(extraFee)}</b></div>`:''}
+  <div class="sum-row total"><span>Total payable</span><b>${fmt(total)}</b></div>`;
+}
+function renderSummaries(){
+  const co = document.getElementById('checkoutSummary');
+  const pay = document.getElementById('paymentSummary');
+  if(co) co.innerHTML = summaryHTML(0);
+  if(pay) pay.innerHTML = summaryHTML(selectedPay==='cod'?49:0);
+}
+
+/* ------------------------------------------------------------------
+   9. CHECKOUT FORM (address) — validation then payment page
+------------------------------------------------------------------- */
+function bindAddressForm(){
+  document.getElementById('addressForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const fields = [
+      ['coName', v=>v.trim().length>1],
+      ['coPhone', v=>/^[6-9]\d{9}$/.test(v.replace(/\s/g,''))],
+      ['coEmail', v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)],
+      ['coAddr', v=>v.trim().length>5],
+      ['coCity', v=>v.trim().length>1],
+      ['coPin', v=>/^\d{6}$/.test(v)]
+    ];
+    let ok = true;
+    fields.forEach(([id,test])=>{
+      const el = document.getElementById(id);
+      const valid = test(el.value);
+      el.closest('.field').classList.toggle('invalid', !valid);
+      if(!valid) ok = false;
+    });
+    if(!ok){ toast('Please fix the highlighted fields'); return; }
+
+    checkoutInfo = {
+      name:document.getElementById('coName').value.trim(),
+      phone:document.getElementById('coPhone').value.trim(),
+      email:document.getElementById('coEmail').value.trim(),
+      addr:document.getElementById('coAddr').value.trim(),
+      city:document.getElementById('coCity').value.trim(),
+      pin:document.getElementById('coPin').value.trim(),
+      state:document.getElementById('coState').value
+    };
+    store.set('ff_checkout', checkoutInfo);
+    window.dataLayer.push({event:'add_shipping_info', ecommerce:{currency:'INR', value:cartTotals().total, items:gaItems()}});
+    go('#/payment');
+  });
+}
+
+/* ------------------------------------------------------------------
+   10. PAYMENT — AddPaymentInfo on method selection, Purchase on pay
+------------------------------------------------------------------- */
+let selectedPay = 'upi';
+
+function bindPayment(){
+  document.querySelectorAll('.pay-opt').forEach(opt=>{
+    opt.addEventListener('click', ()=>{
+      document.querySelectorAll('.pay-opt').forEach(o=>o.classList.remove('sel'));
+      opt.classList.add('sel');
+      opt.querySelector('input').checked = true;
+      selectedPay = opt.dataset.method;
+      document.querySelectorAll('.pay-detail').forEach(d=>d.classList.remove('show'));
+      document.getElementById('detail-'+selectedPay).classList.add('show');
+      renderSummaries();
+
+      const t = cartTotals();
+      track('AddPaymentInfo', {
+        content_type:'product',
+        contents:pixelContents(),
+        payment_method:selectedPay,
+        value:t.total + (selectedPay==='cod'?49:0),
+        currency:'INR'
+      });
+    });
+  });
+
+  document.getElementById('payBtn').addEventListener('click', placeOrder);
+}
+
+function placeOrder(){
+  if(cart.length===0){ toast('Your cart is empty'); go('#/shop'); return; }
+
+  // light validation of the mock payment fields
+  if(selectedPay==='upi' && !document.getElementById('upiId').value.includes('@')){ toast('Enter a valid UPI ID'); return; }
+  if(selectedPay==='card' && document.getElementById('cardNum').value.replace(/\s/g,'').length < 15){ toast('Enter a valid card number'); return; }
+
+  const btn = document.getElementById('payBtn');
+  btn.disabled = true; btn.textContent = 'Processing payment…';
+
+  setTimeout(()=>{
+    const t = cartTotals();
+    const fee = selectedPay==='cod'?49:0;
+    const orderId = 'FF' + Date.now().toString().slice(-8);
+    const orderTotal = t.total + fee;
+
+    /* ---- Purchase: the money event ---- */
+    track('Purchase', {
+      content_type:'product',
+      contents:pixelContents(),
+      content_ids:cart.map(l=>{const {p,fl,sz}=lineData(l);return `${p.id}-${sz.id}-${fl.id}`;}),
+      num_items:t.count,
+      value:orderTotal, currency:'INR',
+      order_id:orderId, payment_method:selectedPay
+    });
+    window.dataLayer.push({event:'purchase', ecommerce:{
+      transaction_id:orderId, currency:'INR', value:orderTotal,
+      shipping:t.shipping + fee, items:gaItems()
+    }});
+
+    lastOrder = { id:orderId, total:orderTotal, count:t.count, method:selectedPay, items:cart.map(l=>lineData(l)) };
+    cart = []; saveCart();
+    btn.disabled = false; btn.textContent = 'Pay Securely →';
+    go('#/success');
+  }, 1400);
+}
+
+/* ------------------------------------------------------------------
+   11. SUCCESS PAGE
+------------------------------------------------------------------- */
+let lastOrder = null;
+function renderSuccess(){
+  const root = document.getElementById('successRoot');
+  if(!lastOrder){ root.innerHTML = '<h2>No recent order</h2><p style="color:var(--muted);margin:14px 0 26px">Head to the shop to place one.</p><button class="btn btn-gold" onclick="go(\'#/shop\')">Shop Now</button>'; return; }
+  const o = lastOrder;
+  const methodName = {upi:'UPI', card:'Card', cod:'Cash on Delivery'}[o.method];
+  root.innerHTML = `
+    <div class="check-ring"><svg viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
+    <span class="eyebrow">Order Confirmed</span>
+    <h1 style="font-size:clamp(32px,5vw,52px);margin:14px 0 10px">You're fueled up${checkoutInfo?', '+checkoutInfo.name.split(' ')[0]:''}.</h1>
+    <p style="color:var(--muted)">Your order is confirmed and will ship from our warehouse today. Tracking details are on their way to ${checkoutInfo?checkoutInfo.email:'your email'}.</p>
+    <div class="order-card">
+      <div class="oid">Order ${o.id}</div>
+      ${o.items.map(it=>`<div class="sum-row"><span>${it.p.name} <span style="font-family:var(--mono);font-size:11px;color:var(--dim)">(${it.fl.name}, ${it.sz.name})</span></span><b>${fmt(it.total)}</b></div>`).join('')}
+      <div class="sum-row total"><span>Paid via ${methodName}</span><b>${fmt(o.total)}</b></div>
+    </div>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+      <button class="btn btn-gold" onclick="go('#/shop')">Continue Shopping</button>
+      <button class="btn btn-line" onclick="track('Lead',{content_name:'whatsapp_support'});window.open('https://wa.me/919000000000?text='+encodeURIComponent('Hi FitFuel! Query about order ${o.id}'),'_blank')">WhatsApp Support</button>
+    </div>
+    <p style="margin-top:34px;font-size:13.5px;color:var(--dim)">Want drop alerts and training tips? Join the Fuel List in the footer below ↓</p>`;
+}
+
+/* ------------------------------------------------------------------
+   12. SEARCH — overlay + Search event
+------------------------------------------------------------------- */
+function openSearch(){
+  document.getElementById('searchOverlay').classList.add('show');
+  document.getElementById('searchInput').focus();
+  renderSearchResults('');
+}
+function closeSearch(){ document.getElementById('searchOverlay').classList.remove('show'); }
+
+function searchProducts(q){
+  q = q.toLowerCase().trim();
+  return PRODUCT_ORDER.map(id=>CATALOG[id]).filter(p=>{
+    if(!q) return true;
+    const hay = (p.name+' '+p.category+' '+p.tagline+' '+p.flavours.map(f=>f.name).join(' ')).toLowerCase();
+    return hay.includes(q);
+  });
+}
+function renderSearchResults(q){
+  const res = searchProducts(q);
+  const box = document.getElementById('searchResults');
+  if(res.length===0){ box.innerHTML = '<div class="sr-empty">No products match "'+q.replace(/</g,'&lt;')+'" — try "whey", "creatine" or "pre-workout"</div>'; return; }
+  box.innerHTML = res.map(p=>`
+    <button class="sr-item" onclick="closeSearch();go('#/product/${p.id}')" style="--pc:${p.accent}">
+      <div class="thumb">${tubSVG(p,{uid:'-sr'})}</div>
+      <div><b>${p.name}</b><span>${p.tagline}</span></div>
+      <div class="p">${fmt(p.sizes[0].price)}</div>
+    </button>`).join('');
+}
+
+/* ------------------------------------------------------------------
+   13. FORMS — Lead · CompleteRegistration · Subscribe
+------------------------------------------------------------------- */
+function bindForms(){
+  /* Lead — free plan form */
+  document.getElementById('leadForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = document.getElementById('leadName');
+    const email = document.getElementById('leadEmail');
+    let ok = true;
+    if(name.value.trim().length<2){ name.closest('.field').classList.add('invalid'); ok=false; } else name.closest('.field').classList.remove('invalid');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){ email.closest('.field').classList.add('invalid'); ok=false; } else email.closest('.field').classList.remove('invalid');
+    if(!ok) return;
+
+    track('Lead', {
+      content_name:'8_week_plan',
+      content_category:'lead_magnet',
+      lead_goal:document.getElementById('leadGoal').value
+    });
+    e.target.reset();
+    toast('Plan sent! Check your inbox in the next few minutes 💪');
+  });
+
+  /* CompleteRegistration — account creation */
+  document.getElementById('registerForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const name = document.getElementById('regName');
+    const email = document.getElementById('regEmail');
+    const pass = document.getElementById('regPass');
+    let ok = true;
+    if(name.value.trim().length<2){ name.closest('.field').classList.add('invalid'); ok=false; } else name.closest('.field').classList.remove('invalid');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){ email.closest('.field').classList.add('invalid'); ok=false; } else email.closest('.field').classList.remove('invalid');
+    if(pass.value.length<6){ pass.closest('.field').classList.add('invalid'); ok=false; } else pass.closest('.field').classList.remove('invalid');
+    if(!ok) return;
+
+    track('CompleteRegistration', {
+      content_name:'account_signup',
+      registration_method:'email',
+      status:'completed'
+    });
+    closeModal('registerModal');
+    e.target.reset();
+    toast('Account created — welcome to FitFuel! 🎉');
+  });
+
+  /* Subscribe — newsletter */
+  document.getElementById('subForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const email = document.getElementById('subEmail');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){ toast('Enter a valid email to subscribe'); return; }
+    track('Subscribe', {
+      content_name:'fuel_list_newsletter',
+      subscription_channel:'email',
+      predicted_ltv:0
+    });
+    e.target.reset();
+    toast('You\u2019re on the Fuel List ⚡');
+  });
+
+  /* Search submit */
+  document.getElementById('searchForm').addEventListener('submit', e=>{
+    e.preventDefault();
+    const q = document.getElementById('searchInput').value;
+    track('Search', { search_string:q, content_category:'supplements' });
+    renderSearchResults(q);
+  });
+  document.getElementById('searchInput').addEventListener('input', e=> renderSearchResults(e.target.value));
+
+  /* overlay/modal dismissal */
+  document.getElementById('searchOverlay').addEventListener('click', e=>{ if(e.target.id==='searchOverlay') closeSearch(); });
+  document.getElementById('registerModal').addEventListener('click', e=>{ if(e.target.id==='registerModal') closeModal('registerModal'); });
+  document.addEventListener('keydown', e=>{
+    if(e.key==='Escape'){ closeSearch(); closeModal('registerModal'); }
+    if((e.metaKey||e.ctrlKey) && e.key==='k'){ e.preventDefault(); openSearch(); }
+  });
+}
+
+function openModal(id){ document.getElementById(id).classList.add('show'); }
+function closeModal(id){ document.getElementById(id).classList.remove('show'); }
+
+/* ------------------------------------------------------------------
+   14. ROUTER — SPA hash routing + PageView per virtual page
+------------------------------------------------------------------- */
+const ROUTES = {
+  '': 'p-home', '/': 'p-home',
+  '/shop': 'p-shop',
+  '/cart': 'p-cart',
+  '/checkout': 'p-checkout',
+  '/payment': 'p-payment',
+  '/success': 'p-success'
+};
+
+function go(hash){ location.hash = hash; }
+
+function router(){
+  let path = location.hash.replace(/^#/, '') || '/';
+  let pageId, pdpId = null;
+
+  const m = path.match(/^\/product\/(\w+)$/);
+  if(m){ pageId = 'p-product'; pdpId = m[1]; }
+  else pageId = ROUTES[path] || 'p-home';
+
+  // guards: checkout/payment need a cart
+  if((pageId==='p-checkout' || pageId==='p-payment') && cart.length===0){
+    toast('Your cart is empty'); pageId = 'p-shop'; path = '/shop';
+  }
+
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo({top:0, behavior:'instant' in window ? 'instant' : 'auto'});
+
+  // nav highlight
+  document.querySelectorAll('[data-nav]').forEach(a=>a.classList.remove('active'));
+  if(pageId==='p-home') document.querySelector('[data-nav="home"]')?.classList.add('active');
+  if(pageId==='p-shop') document.querySelector('[data-nav="shop"]')?.classList.add('active');
+
+  // per-page renders
+  if(pageId==='p-product') renderPDP(pdpId);
+  if(pageId==='p-cart') renderCart();
+  if(pageId==='p-checkout'){ renderSummaries(); prefillAddress(); }
+  if(pageId==='p-payment') renderSummaries();
+  if(pageId==='p-success') renderSuccess();
+
+  /* PageView — SPA virtual pageview on every route */
+  track('PageView', { page_path:'/#'+path, page_title:pageId.replace('p-','fitfuel_') });
+  window.dataLayer.push({event:'virtual_pageview', page_path:'/#'+path});
+}
+
+function prefillAddress(){
+  if(!checkoutInfo) return;
+  const map = {coName:'name',coPhone:'phone',coEmail:'email',coAddr:'addr',coCity:'city',coPin:'pin',coState:'state'};
+  Object.keys(map).forEach(id=>{ const el = document.getElementById(id); if(el && checkoutInfo[map[id]]) el.value = checkoutInfo[map[id]]; });
+}
+
+/* ------------------------------------------------------------------
+   15. UI HELPERS
+------------------------------------------------------------------- */
+let toastTimer;
+function toast(text){
+  const t = document.getElementById('toast');
+  t.textContent = text;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove('show'), 2400);
+}
+
+function initFAQ(){
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const faq = btn.parentElement;
+      const ans = faq.querySelector('.faq-a');
+      const open = faq.classList.contains('open');
+      document.querySelectorAll('.faq.open').forEach(f=>{
+        f.classList.remove('open'); f.querySelector('.faq-a').style.maxHeight = null;
+        f.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!open){
+        faq.classList.add('open');
+        ans.style.maxHeight = ans.scrollHeight + 'px';
+        btn.setAttribute('aria-expanded','true');
+        window.dataLayer.push({event:'faq_open', faq_question:btn.textContent.replace('+','').trim()});
+      }
+    });
+  });
+}
+
+let revealIO;
+function initReveal(){
+  if(!revealIO){
+    revealIO = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); revealIO.unobserve(e.target); }});
+    }, {threshold:.1});
+  }
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>revealIO.observe(el));
+}
+
+/* ------------------------------------------------------------------
+   16. INIT
+------------------------------------------------------------------- */
+document.getElementById('heroTub').innerHTML = tubSVG(CATALOG.whey,{uid:'-hero'});
+document.getElementById('tickerTrack').innerHTML += document.getElementById('tickerTrack').innerHTML;
+renderGrids();
+bindAddressForm();
+bindPayment();
+bindForms();
+initFAQ();
+initReveal();
+updateCartBadge();
+window.addEventListener('hashchange', router);
+router();
+</script>
+</body>
+</html>
